@@ -1,0 +1,186 @@
+.sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 1000;
+    padding: 0.5rem;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    background: transparent;
+}
+
+.sidebar-panel {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    margin-right: 0.5rem;
+}
+
+.sidebar-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+}
+
+.sidebar-icon {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background: #f0f0f0;
+    color: #555;
+}
+
+/* Hover effects */
+.sidebar-link:hover .sidebar-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(-5px);
+}
+
+.sidebar-link:hover .sidebar-item {
+    transform: translateX(-5px);
+}
+
+.sidebar-link:hover .sidebar-icon {
+    transform: scale(1.1);
+}
+
+/* Specific styles for each contact type */
+.phone .sidebar-icon {
+    background: #25d366;
+    color: white;
+}
+
+.email .sidebar-icon {
+    background: #ea4335;
+    color: white;
+}
+
+.whatsapp .sidebar-icon {
+    background: #25d366;
+    color: white;
+}
+
+.messenger .sidebar-icon {
+    background: #0084ff;
+    color: white;
+}
+
+.facebook .sidebar-icon {
+    background: #1877f2;
+    color: white;
+}
+
+/* Hover states */
+.phone:hover .sidebar-icon {
+    background: #128c7e;
+    color: white;
+}
+
+.email:hover .sidebar-icon {
+    background: #d33426;
+    color: white;
+}
+
+.whatsapp:hover .sidebar-icon {
+    background: #128c7e;
+    color: white;
+}
+
+.messenger:hover .sidebar-icon {
+    background: #0066cc;
+    color: white;
+}
+
+.facebook:hover .sidebar-icon {
+    background: #0e5a9d;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0.25rem;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .sidebar-link {
+        flex: 1;
+        text-align: center;
+    }
+
+    .sidebar-item {
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .sidebar-panel {
+        display: none;
+    }
+
+    .sidebar-text {
+        display: none;
+    }
+}
+
+/* Animation for initial appearance */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%) translateY(-50%);
+    }
+
+    to {
+        transform: translateX(0) translateY(-50%);
+    }
+}
+
+.sidebar {
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Mobile touch feedback */
+@media (max-width: 768px) {
+    .sidebar-link:active .sidebar-icon {
+        transform: scale(0.95);
+    }
+}
