@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import logo from "../assets/header.webp";
 import "./css/Header.css";
 
 export default function Header() {
@@ -17,11 +18,7 @@ export default function Header() {
     <header className="header">
       <div className="header-container">
         <div className="header-left">
-          <img
-            src="/src/assets/logo/header.webp"
-            alt="Company Logo"
-            className="header-logo"
-          />
+          <img src={logo} alt="Company Logo" className="header-logo" />
         </div>
 
         <div className="header-right">

@@ -1,6 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import contactImg from "../assets/contact.avif";
+
 import "./css/Footer.css";
 
 export default function Footer() {
@@ -77,7 +79,7 @@ export default function Footer() {
           <div className="footer-col contact-person">
             <h4>Contact Person</h4>
             <img
-              src="/src/assets/contact-person/Sankar.webp"
+              src={contactImg}
               alt="Contact Person"
               className="contact-img"
             />
