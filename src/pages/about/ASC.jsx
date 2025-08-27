@@ -1,7 +1,7 @@
 import React from "react";
 import Umesh from "../../assets/accounting/Umesh.jpg";
 import Rita from "../../assets/accounting/Rita.jpg";
-import noFace from "../../assets/accounting/noFace.jpg";
+import noFace from "../../assets/noFace.jpg";
 
 import "./css/Committee.css";
 import "./css/ASC.css";

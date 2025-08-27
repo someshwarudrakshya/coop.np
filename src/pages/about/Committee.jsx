@@ -5,7 +5,7 @@ import Bipana from "../../assets/committee/Bipana.jpg";
 import Uma from "../../assets/committee/Uma.jpg";
 import Phurbi from "../../assets/committee/Phurbi.jpg";
 import Bhola from "../../assets/committee/Bhola.avif";
-import noFace from "../../assets/committee/noFace.jpg";
+import noFace from "../../assets/noFace.jpg";
 
 import "./css/Committee.css";
 
