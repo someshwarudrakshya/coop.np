@@ -1,12 +1,14 @@
-import Carousel from "../layouts/Carousel";
-import Stats from "../layouts/Stats";
-import ChairmanStory from "../layouts/ChairmanStory";
-import FAQs from "../layouts/FAQs";
-import Testimonials from "../layouts/Testimonials";
-import OurSchemes from "../layouts/OurSchemes";
+import Carousel from "../sections/Carousel";
+import Stats from "../sections/Stats";
+import ChairmanStory from "../sections/ChairmanStory";
+import Committee from "../sections/Committee";
+import Testimonials from "../sections/Testimonials";
 import ScrollingText from "../layouts/ScrollingText";
-import Link from "../layouts/Link";
-import Services from "../layouts/Service";
+import Utilities from "../sections/Utilities";
+import Services from "../sections/OurSchemes";
+import WhyChoose from "../sections/WhyChoose";
+import CTA from "../sections/CTA";
+import FAQs from "../sections/FAQs";
 
 export default function App() {
   return (
@@ -15,13 +17,15 @@ export default function App() {
         <Carousel />
         <ScrollingText />
         <Stats />
-        <div className="section-divider container mx-auto"></div>
+        <div className="section-divider mx-auto"></div>
         <ChairmanStory />
-        <OurSchemes />
+        <Committee />
         <Services />
-        <Link />
+        <WhyChoose />
+        <Utilities />
         <Testimonials />
         <FAQs />
+        <CTA />
       </main>
     </div>
   );

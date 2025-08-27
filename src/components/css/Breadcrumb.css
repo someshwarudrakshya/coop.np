@@ -1,0 +1,44 @@
+.inner-header {
+  color: #fff;
+  padding: 80px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  background-image: url(https://hamronepalcoop.com.np/wp-content/themes/hamronepal/images/banner/banner-1.jpg);
+  background-position: center;
+}
+
+.inner-header .title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-list li {
+  font-size: 0.95rem;
+}
+
+.breadcrumb-list li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb-list li a:hover {
+  color: #ffd700;
+}
+
+.breadcrumb-list .active {
+  color: #ffd700;
+  font-weight: 600;
+}

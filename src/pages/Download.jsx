@@ -1,5 +1,5 @@
 import { FaFilePdf, FaFileAlt, FaFileWord, FaDownload } from "react-icons/fa";
-import "../styles/Download.css";
+import "./css/Download.css";
 
 const files = [
   {
@@ -7,28 +7,83 @@ const files = [
     type: "PDF",
     icon: <FaFilePdf className="file-icon pdf" />,
     size: "450 KB",
-    url: "/files/membership-form.pdf",
+    url: "./public/download/1-Membership Form.pdf",
+  },
+
+  {
+    name: "Account Opening Form",
+    type: "PDF",
+    icon: <FaFilePdf className="file-icon pdf" />,
+    size: "450 KB",
+    url: "./public/download/2-Account Opening.pdf",
   },
   {
-    name: "Annual Report 2080",
-    type: "DOCX",
-    icon: <FaFileWord className="file-icon docx" />,
-    size: "1.2 MB",
-    url: "/files/annual-report-2080.docx",
+    name: "Account Closing Form",
+    type: "PDF",
+    icon: <FaFilePdf className="file-icon pdf" />,
+    size: "450 KB",
+    url: "./public/download/3-Account-Closing.pdf",
   },
   {
-    name: "Terms & Conditions",
-    type: "TXT",
-    icon: <FaFileAlt className="file-icon txt" />,
-    size: "15 KB",
-    url: "/files/terms.txt",
+    name: "Required Docs",
+    type: "PDF",
+    icon: <FaFilePdf className="file-icon pdf" />,
+    size: "450 KB",
+    url: "./public/download/5-Required Docs.pdf",
+  },
+  {
+    name: "Loan Apply Form",
+    type: "PDF",
+    icon: <FaFilePdf className="file-icon pdf" />,
+    size: "450 KB",
+    url: "./public/download/6- Loan Apply Form.pdf",
+  },
+  {
+    name: "KYM",
+    type: "PDF",
+    icon: <FaFilePdf className="file-icon pdf" />,
+    size: "450 KB",
+    url: "./public/download/6-KYM.pdf",
+  },
+  {
+    name: "Saving Loan Demand Form",
+    type: "PDF",
+    icon: <FaFilePdf className="file-icon pdf" />,
+    size: "450 KB",
+    url: "./public/download/7-Saving Loan.pdf",
+  },
+  {
+    name: "Varpai",
+    type: "PDF",
+    icon: <FaFilePdf className="file-icon pdf" />,
+    size: "450 KB",
+    url: "./public/download/8-Varpai.pdf",
+  },
+  {
+    name: "Letter of Consents",
+    type: "PDF",
+    icon: <FaFilePdf className="file-icon pdf" />,
+    size: "450 KB",
+    url: "./public/download/9-Letter of Consents.pdf",
+  },
+  {
+    name: "Share Return Form",
+    type: "PDF",
+    icon: <FaFilePdf className="file-icon pdf" />,
+    size: "450 KB",
+    url: "./public/download/10-Share Return Form.pdf",
   },
 ];
 
 export default function Download() {
   return (
-    <div className="download-container">
-      <h2 className="download-title">📥 Downloads</h2>
+    <div className="container">
+      <div className="section-title">
+        <h2>Downloads<span className="highlight"> Files</span></h2>
+        <p>
+          Download the forms you need directly below. Click the download button to save the file to your device.
+        </p>
+      </div>
 
       <div className="download-grid">
         {files.map((file, index) => (

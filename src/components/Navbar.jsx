@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes, FaAngleDown } from "react-icons/fa";
-import "../styles/Navbar.css";
+import "./css/Navbar.css";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -58,33 +58,33 @@ export default function Navbar() {
   const navItems = [
     { path: "/", label: "Home" },
     {
-      path: "/about",
+      path: "/About",
       label: "About",
       subItems: [
-        { path: "/About", label: "About Us" },
-        { path: "/Mission-vision", label: "Mission & Vision" },
-        { path: "/Team", label: "Our Team" },
-        { path: "/CEO-Message", label: "Message from CEO" },
+        { path: "/About/Mission", label: "Mission & Vision" },
+        { path: "/About/Team", label: "Our Team" },
+        { path: "/About/MessageFrom", label: "Message from CEO" },
       ],
     },
     {
-      path: "/services",
+      path: "/Services",
       label: "Services",
       subItems: [
-        { path: "/Saving", label: "Saving" },
-        { path: "/Loan", label: "Loan" },
-        { path: "/Required-docs", label: "Required Documents" },
+        { path: "/Services/Saving", label: "Saving Schemes" },
+        { path: "/Services/Loan", label: "Loan Schemes" },
+        { path: "/Services/Required", label: "Required Documents" },
       ],
     },
-    { path: "/Gallery", label: "Gallery" }, // ✅ fixed here
-    { path: "/NewsEvents", label: "News & Events" },
+    { path: "/News&Events", label: "News & Events" },
+    { path: "/Gallery", label: "Gallery" },
     { path: "/Download", label: "Download" },
+    { path: "/Career", label: "Career" },
     { path: "/Contact", label: "Contact" },
   ];
 
   return (
     <nav ref={navRef}>
-      <div className="container navbar">
+      <div className="nav-container navbar">
         <div
           className="mobile-menu"
           onClick={toggleMobileMenu}

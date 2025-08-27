@@ -1,0 +1,79 @@
+/* ===== Hero Section ===== */
+.loan-title {
+  font-size: var(--step-4);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  text-align: center;
+}
+
+.loan-subtitle {
+  font-size: var(--step-1);
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* ===== Loan Cards Section ===== */
+.loan-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  padding: var(--space-8) 0;
+}
+
+.loan-card {
+  background: #fff;
+  padding: var(--space-12);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.loan-icon {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: var(--space-3);
+  margin: auto;
+}
+
+.loan-card h2 {
+  font-size: var(--step-2);
+  margin-bottom: var(--space-3);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.loan-card p {
+  font-size: var(--step-0);
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* ===== Loan Note Section ===== */
+.loan-note {
+  padding: var(--space-4);
+  font-weight: 600;
+  color: var(--text-color);
+  border-radius: var(--radius-md);
+  text-align: center;
+  background: var(--background);
+  border-left: 4px solid var(--accent-color);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .loan-title {
+    font-size: var(--step-3);
+  }
+
+  .loan-subtitle {
+    font-size: var(--step-0);
+  }
+}

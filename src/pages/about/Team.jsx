@@ -1,11 +1,13 @@
-import React from "react";
+import Committee from "./Committee";
+import ASC from "./ASC";
 
-function Team() {
+export default function Team() {
   return (
-    <div className="padding">
-      <h1 className="text-color bold">Our Team</h1>
-      <p className="mt-4 text-color-700">Meet our dedicated team members...</p>
+    <div className="flex flex-col min-h-screen bg-color-100 dark:bg-color-900 text-color-900 dark:text-color-100">
+      <main className="flex-grow">
+        <Committee />
+        <ASC />
+      </main>
     </div>
   );
 }
-export default Team;

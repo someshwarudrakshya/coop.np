@@ -1,0 +1,36 @@
+/* EMI Section */
+.emi-section {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.emi-widget {
+  margin-top: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Simple animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .inner-header .title {
+    font-size: 1.8rem;
+  }
+
+  .breadcrumb-list li {
+    font-size: 0.85rem;
+  }
+
+  .emi-section {
+    padding: 40px 10px;
+  }
+}

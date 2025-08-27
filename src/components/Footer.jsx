@@ -1,15 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import "../styles/Footer.css";
+import "./css/Footer.css";
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="Footer-container">
         <div className="footer-grid">
           <div className="footer-col">
-            <h3>Quick Links</h3>
+            <h4>Quick Links</h4>
             <ul>
               <li>
                 <a href="index.html">Home</a>
@@ -18,7 +18,10 @@ export default function Footer() {
                 <a href="about.html">About Us</a>
               </li>
               <li>
-                <a href="products.html">Products</a>
+                <a href="products.html">Services</a>
+              </li>
+              <li>
+                <a href="download.html">Download</a>
               </li>
               <li>
                 <a href="gallery.html">Gallery</a>
@@ -30,28 +33,28 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
-            <h3>Products</h3>
+            <h4>Our Schemes</h4>
             <ul>
               <li>
-                <a href="#">Rudraksha Beads</a>
+                <a href="#">Savings Accounts</a>
               </li>
               <li>
-                <a href="#">Rudraksha Malas</a>
+                <a href="#">Affordable Loans</a>
               </li>
               <li>
-                <a href="#">Saplings</a>
+                <a href="#">Daily Savings</a>
               </li>
               <li>
-                <a href="#">Ayurvedic Products</a>
+                <a href="#">Easy Withdrawals</a>
               </li>
               <li>
-                <a href="#">Custom Orders</a>
+                <a href="#">Fast Processing</a>
               </li>
             </ul>
           </div>
 
           <div className="footer-col">
-            <h3>Membership</h3>
+            <h4>Membership</h4>
             <ul>
               <li>
                 <a href="#">Benefits</a>
@@ -72,16 +75,17 @@ export default function Footer() {
           </div>
 
           <div className="footer-col contact-person">
-            <h3>Contact Person</h3>
+            <h4>Contact Person</h4>
             <img
-              src="./contact-person/sankar.webp"
+              src="/src/assets/contact-person/Sankar.webp"
               alt="Contact Person"
               className="contact-img"
             />
-            <h3>शंकर साह</h3>
+            <h4>शंकर साह</h4>
             <p>सम्पर्क अधिकारी</p>
             <p>
-              <FontAwesomeIcon icon={faPhone} /> +977-9817377572
+              <FontAwesomeIcon icon={faPhone} /> +977-9817377572 <br></br>
+              +977-9842146148
             </p>
           </div>
         </div>

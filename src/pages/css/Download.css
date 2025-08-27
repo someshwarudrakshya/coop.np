@@ -1,0 +1,252 @@
+/* Download Section */
+.download-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.download-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.download-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.download-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    border-color: #cbd5e0;
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.file-icon {
+    font-size: 2rem;
+    color: #ef4444;
+    /* Red for PDF */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #fef2f2;
+}
+
+/* Different colors for different file types */
+.file-icon.pdf {
+    color: #ef4444;
+    background: #fef2f2;
+}
+
+.file-icon.docx {
+    color: #2563eb;
+    background: #eff6ff;
+}
+
+.file-icon.txt {
+    color: #059669;
+    background: #f0fdf4;
+}
+
+.file-details h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.file-meta {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .download-container {
+        padding: 1rem;
+    }
+
+    .download-title {
+        font-size: 2rem;
+    }
+
+    .download-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 1.25rem;
+    }
+
+    .file-info {
+        gap: 0.75rem;
+    }
+
+    .file-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .file-details h3 {
+        font-size: 1.1rem;
+    }
+
+    .download-btn {
+        justify-content: center;
+        padding: 0.625rem 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-title {
+        font-size: 1.8rem;
+    }
+
+    .file-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .file-details h3 {
+        font-size: 1rem;
+    }
+
+    .file-meta {
+        font-size: 0.8rem;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .download-title {
+        color: #f3f4f6;
+    }
+
+    .download-item {
+        background: #374151;
+        border-color: #4b5563;
+    }
+
+    .file-details h3 {
+        color: #f3f4f6;
+    }
+
+    .file-meta {
+        color: #d1d5db;
+    }
+
+    .file-icon.pdf {
+        color: #f87171;
+        background: rgba(239, 68, 68, 0.1);
+    }
+
+    .file-icon.docx {
+        color: #60a5fa;
+        background: rgba(37, 99, 235, 0.1);
+    }
+
+    .file-icon.txt {
+        color: #34d399;
+        background: rgba(5, 150, 105, 0.1);
+    }
+
+    .download-btn {
+        background: #2563eb;
+    }
+
+    .download-btn:hover {
+        background: #1d4ed8;
+    }
+}
+
+/* Animation for file items */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.download-item {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.download-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.download-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.download-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    .download-item,
+    .download-btn {
+        transition: none;
+        animation: none;
+    }
+
+    .download-item:hover {
+        transform: none;
+    }
+
+    .download-btn:hover {
+        transform: none;
+    }
+}

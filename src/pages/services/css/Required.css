@@ -1,0 +1,46 @@
+/* Required Documents Page Styles */
+.page-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--primary-color, #046b0e);
+  margin-bottom: 30px;
+}
+
+.docs-section {
+  margin-bottom: 40px;
+}
+
+.required-title {
+  font-size: 1.8rem;
+  color: var(--secondary-color, #d24e01);
+  margin-bottom: 10px;
+}
+
+.required-subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.docs-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.docs-list li {
+  padding: 12px 15px;
+  background-color: #f4f4f9;
+  border-left: 4px solid var(--primary-color, #046b0e);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.docs-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

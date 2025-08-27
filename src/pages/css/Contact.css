@@ -1,0 +1,275 @@
+/* Contact Page Styles */
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+/* Left Side - Address */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.address-card {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.address-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.address-item:last-child {
+    margin-bottom: 0;
+}
+
+.address-icon {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.address-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.25rem;
+}
+
+.address-text {
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* Right Side - Form */
+.contact-form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+    padding: 0.75rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8fafc;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #9ca3af;
+}
+
+.submit-btn {
+    background: #059669;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background: #047857;
+    transform: translateY(-2px);
+}
+
+/* Google Maps Section */
+.map-section {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.map-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.google-map {
+    border-radius: 12px;
+    display: block;
+}
+
+.map-actions {
+    margin-top: 1rem;
+}
+
+.map-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2563eb;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.map-link-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .map-section {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .address-card,
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .info-title {
+        font-size: 1.5rem;
+    }
+
+    .map-title {
+        font-size: 1.5rem;
+    }
+
+    .map-link-btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .google-map {
+        height: 300px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+
+    .contact-title,
+    .info-title,
+    .address-title,
+    .form-label,
+    .map-title {
+        color: #f3f4f6;
+    }
+
+    .contact-description,
+    .address-text {
+        color: #d1d5db;
+    }
+
+    .address-card {
+        background: #374151;
+        border-color: #4b5563;
+    }
+
+    .contact-form-container {
+        background: #374151;
+        border-color: #4b5563;
+    }
+
+    .form-input,
+    .form-textarea {
+        background: #4b5563;
+        border-color: #6b7280;
+        color: white;
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+        background: #1f2937;
+        border-color: #2563eb;
+    }
+
+    .map-container {
+        box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+    }
+}

@@ -11,10 +11,18 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Download from "./pages/Download";
 import NewsEvents from "./pages/NewsEvents";
-import History from "./pages/about/History";
-import Massage from "./pages/about/Massage";
+import Career from "./pages/Career";
+
+// Tools pages
+import NepalWidget from "./components/NepalWidgets";
+import EmiCalculator from "./components/EmiCalculator";
+
+// About subpages
+import MessageFrom from "./pages/about/MessageFrom";
 import Mission from "./pages/about/Mission";
 import Team from "./pages/about/Team";
+
+// Services subpages
 import Saving from "./pages/services/Saving";
 import Loan from "./pages/services/Loan";
 import Required from "./pages/services/Required";
@@ -28,21 +36,27 @@ export default function App() {
       <Sidebar />
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* about subpages */}
         <Route path="/About" element={<About />} />
-        <Route path="About/History" element={<History />} />
-        <Route path="About/Mission" element={<Mission />} />
-        <Route path="About/Team" element={<Team />} />
-        <Route path="About/Message" element={<Massage />} />
+        <Route path="/About/Mission" element={<Mission />} />
+        <Route path="/About/Team" element={<Team />} />
+        <Route path="/About/MessageFrom" element={<MessageFrom />} />{" "}
+        {/* services subpages */}
         <Route path="/Services" element={<Services />} />
-        <Route path="Services/Saving" element={<Saving />} />
-        <Route path="Services/Loan" element={<Loan />} />
-        <Route path="Services/Required" element={<Required />} />
+        <Route path="/Services/Saving" element={<Saving />} />
+        <Route path="/Services/Loan" element={<Loan />} />
+        <Route path="/Services/Required" element={<Required />} />
+        {/* pages */}
         <Route path="/Gallery" element={<Gallery />} />
-        <Route path="/News&Events" element={<NewsEvents />} />
         <Route path="/Download" element={<Download />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/News&events" element={<NewsEvents />} />
+        <Route path="/Career" element={<Career />} />
+        {/* tools */}
+        <Route path="/NepalWidgets" element={<NepalWidget />} />
+        <Route path="/EmiCalculator" element={<EmiCalculator />} />
       </Routes>
-      <div className="section-divider container mx-auto"></div>
+      <div className="section-divider mx-auto"></div>
       <Footer />
     </Router>
   );

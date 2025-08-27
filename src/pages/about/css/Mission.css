@@ -1,0 +1,84 @@
+/* Mission.css */
+.mv-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-6);
+  padding: var(--space-8) 0;
+}
+
+.mv-card {
+  background: #fff;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mv-icon {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: var(--space-12);
+  margin: 0 auto;
+}
+
+.mv-card h2 {
+  font-size: var(--step-2);
+  margin-bottom: var(--space-3);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.mv-intro {
+  font-size: var(--step-0);
+  margin-bottom: var(--space-3);
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== List Style ===== */
+.mv-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mv-card ul li {
+  position: relative;
+  margin-bottom: var(--space-2);
+  padding-left: 1.8rem;
+  font-size: var(--step-0);
+  line-height: 1.6;
+}
+
+.mv-card ul li::before {
+  content: "✔";
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* ===== Core Values ===== */
+.mv-pledge {
+  margin-top: var(--space-4);
+  font-weight: 600;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .mv-title {
+    font-size: var(--step-3);
+  }
+
+  .mv-subtitle {
+    font-size: var(--step-0);
+  }
+}

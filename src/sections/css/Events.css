@@ -1,0 +1,119 @@
+/* Events Section Styles */
+.events-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  width: min(90%, 1000px);
+  padding: 2rem 0;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item .content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+/* Extra glow on hover */
+.timeline-item .content:hover {
+  box-shadow: 0 8px 25px rgba(0, 128, 255, 0.3);
+}
+
+.timeline-item.left .content {
+  margin-right: 20px;
+}
+
+.timeline-item.right .content {
+  margin-left: 20px;
+}
+
+.timeline-item .date {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Circles */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: -9px;
+  background-color: #fff;
+  border: 4px solid var(--primary-color);
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.right::before {
+  left: -9px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 25px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline-item::before {
+    left: -2px;
+  }
+
+  .timeline-item .content {
+    margin: 0 0 2rem 0;
+  }
+}

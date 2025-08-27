@@ -1,0 +1,133 @@
+/* Chairman section styles */
+.chairman-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.03);
+}
+
+.content {
+  padding: 1rem;
+}
+
+.message {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  text-align: justify;
+}
+
+.signature {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 1.5rem;
+  position: relative;
+
+}
+
+.signature::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1.5rem;
+  height: 2px;
+  background: var(--accent);
+}
+
+.read-more-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.5rem .75rem;
+  border: none;
+  border-radius: 9999px;
+  /* pill style */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #1e40af;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .chairman-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-container,
+.content {
+  animation: fadeIn 1s ease-out;
+}
+
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 0.65rem 1.25rem;
+  border-radius: 9999px;
+  /* pill shape */
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  background: var(--hover-color);
+}
+
+.read-more-btn .arrow {
+  transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover .arrow {
+  transform: translateX(4px);
+}

@@ -1,0 +1,84 @@
+/* Career.css */
+.job-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.job-icon {
+  font-size: 2rem;
+  color: var(--secondary-color, #d24e01);
+}
+
+.job-info p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.job-description {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+h3 {
+  margin-top: 25px;
+  color: var(--primary-color, #046b0e);
+  font-size: 1.3rem;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.apply-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-left: 5px solid var(--secondary-color, #d24e01);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: var(--secondary-color, #d24e01);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.apply-btn:hover {
+  background: #b23f00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .job-card {
+    padding: 20px;
+  }
+
+  .career-title {
+    font-size: 1.8rem;
+  }
+}

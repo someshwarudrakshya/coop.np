@@ -1,0 +1,67 @@
+.scroll-btn {
+  position: fixed;
+  inset: auto calc(16px + env(safe-area-inset-right))
+    calc(16px + env(safe-area-inset-bottom)) auto;
+  z-index: 9999;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: clamp(44px, 6.5vw, 52px);
+  height: clamp(44px, 6.5vw, 52px);
+  padding: 0;
+
+  border: none;
+  border-radius: 9999px;
+
+  background: var(--accent-color);
+  color: var(--light-color);
+
+  font-size: clamp(18px, 2.6vw, 22px);
+  line-height: 1;
+  cursor: pointer;
+
+  box-shadow: var(--scroll-btn-shadow);
+  transition: transform 180ms ease, box-shadow 180ms ease,
+    background-color 180ms ease, opacity 180ms ease;
+
+  opacity: 0.98;
+  animation: sb-fade-in-up 220ms ease-out both;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scroll-btn:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: var(--scroll-btn-shadow-hover);
+}
+
+.scroll-btn:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: var(--scroll-btn-shadow);
+}
+
+.scroll-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--scroll-btn-ring), var(--scroll-btn-shadow-hover);
+}
+
+.scroll-to-top::before {
+  content: "";
+}
+
+/* Make sure it stays above sticky footers/toolbars on mobile */
+@media (max-width: 480px) {
+  .scroll-btn {
+    inset: auto calc(12px + env(safe-area-inset-right))
+      calc(12px + env(safe-area-inset-bottom)) auto;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-btn {
+    transition: none;
+    animation: none;
+  }
+}

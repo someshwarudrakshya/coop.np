@@ -5,7 +5,7 @@ import {
   FaFacebookF,
 } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
-import "../styles/Sidebar.css";
+import "./css/Sidebar.css";
 
 export default function Sidebar() {
   const contacts = [
@@ -52,14 +52,19 @@ export default function Sidebar() {
           key={index}
           href={item.href}
           target={item.target || "_self"}
-          rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
-          className={`sidebar-link ${item.className}`}
+          className="sidebar-link"
+          rel="noopener noreferrer"
         >
-          <div className="sidebar-item">
-            <div className="sidebar-panel">
+          <div className={`sidebar-item ${item.className} d-flex align-items-center`}>
+            <div className="sidebar-panel flex-grow-1">
               <span className="sidebar-text">{item.text}</span>
             </div>
-            <div className="sidebar-icon">{item.icon}</div>
+            <div
+              className="sidebar-icon d-flex align-items-center justify-content-center"
+              style={{ fontSize: "1.5rem", width: "40px", height: "40px" }}
+            >
+              {item.icon}
+            </div>
           </div>
         </a>
       ))}
