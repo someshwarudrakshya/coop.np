@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="refresh" content="0; URL=/" />
+    <meta charset="UTF-8" />
+    <title>Page Not Found</title>
+    <script type="text/javascript">
+        // Redirect unknown routes to index.html
+        (function () {
+            var path = window.location.pathname;
+            var base = "/"; // change this if your site is in a subfolder
+            window.location.href = base + "#" + path;
+        })();
+    </script>
 </head>
 
-<body></body>
+<body>
+    <h1>Redirecting...</h1>
+</body>
 
 </html>
