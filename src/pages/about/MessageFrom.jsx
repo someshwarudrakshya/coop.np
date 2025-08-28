@@ -4,8 +4,8 @@ import "./css/MessageFrom.css";
 
 export default function MessageFrom() {
   return (
-    <div className="container">
-      <section className="message-page">
+    <section className="container">
+      <div className="message-page">
         {/* Chairman Portrait */}
         <div className="message-hero">
           <img src={chairman} alt="Chairman portrait" loading="lazy" />
@@ -61,10 +61,10 @@ export default function MessageFrom() {
             Mr. <span className="highlight">Bhola Shah</span>
           </p>
         </div>
-      </section>
+      </div>
 
       {/* Note Section */}
       <Note type="MessageFromChairman" />
-    </div>
+    </section>
   );
 }

@@ -13,7 +13,7 @@ export default function Services() {
         "Competitive interest rates",
         "No hidden fees",
         "Flexible deposit options",
-        "24/7 online access",
+        "24/7 online deposit",
         "Insurance protection",
       ],
       img: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
@@ -44,68 +44,51 @@ export default function Services() {
       ],
       img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
     },
-    insurance: {
-      title: "Insurance Products",
-      description:
-        "Protect what matters most with our comprehensive insurance coverage options.",
-      features: [
-        "Life insurance",
-        "Health coverage",
-        "Property protection",
-        "Crop insurance",
-        "Affordable premiums",
-      ],
-      img: "https://images.unsplash.com/photo-1531058020387-3be344556be6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    },
   };
 
   return (
-    <main className="services-container">
-      <section className="services-section">
-        <div className="container">
-          <div className="section-title">
-            <h2>
-              Our <span className="highlight">Schemes</span>
-            </h2>
-            <p>Explore our main financial products and solutions</p>
-          </div>
+    <section className="container">
+      <div className="section-title">
+        <h2>
+          Our <span className="highlight">Schemes</span>
+        </h2>
+        <p>Explore our main financial products and solutions</p>
+      </div>
 
-          <div className="services-tabs">
-            <div className="tab-buttons">
-              {Object.keys(tabServices).map((key) => (
-                <button
-                  key={key}
-                  className={`tab-button ${activeTab === key ? "active" : ""}`}
-                  onClick={() => setActiveTab(key)}
-                >
-                  {tabServices[key].title}
-                </button>
+      <div className="services-tabs">
+        <div className="tab-buttons">
+          {Object.keys(tabServices).map((key) => (
+            <button
+              key={key}
+              className={`tab-button ${activeTab === key ? "active" : ""}`}
+              onClick={() => setActiveTab(key)}
+            >
+              {tabServices[key].title}
+            </button>
+          ))}
+        </div>
+
+        <div className="tab-content">
+          <div className="service-detail">
+            <h3>{tabServices[activeTab].title}</h3>
+            <p>{tabServices[activeTab].description}</p>
+            <ul>
+              {tabServices[activeTab].features.map((feature, index) => (
+                <li key={index}>{feature}</li>
               ))}
-            </div>
-
-            <div className="tab-content">
-              <div className="service-detail">
-                <h3>{tabServices[activeTab].title}</h3>
-                <p>{tabServices[activeTab].description}</p>
-                <ul>
-                  {tabServices[activeTab].features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
-                <a href="#learn-more" className="btn">
-                  Learn More
-                </a>
-              </div>
-              <div className="service-image">
-                <img
-                  src={tabServices[activeTab].img}
-                  alt={tabServices[activeTab].title}
-                />
-              </div>
-            </div>
+            </ul>
+            <a href="#learn-more" className="btn">
+              Learn More
+            </a>
+          </div>
+          <div className="service-image">
+            <img
+              src={tabServices[activeTab].img}
+              alt={tabServices[activeTab].title}
+            />
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }

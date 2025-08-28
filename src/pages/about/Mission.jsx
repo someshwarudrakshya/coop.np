@@ -5,7 +5,7 @@ import "../../global.css";
 
 export default function MissionVision() {
   return (
-    <div className="mv-page container ">
+    <section className="container ">
       <div className="section-title">
         <h2>
           Mission <span className="highlight"> & Vision</span>
@@ -69,8 +69,8 @@ export default function MissionVision() {
         </div>
       </div>
 
-         {/* Note Section */}
+      {/* Note Section */}
       <Note type="MissionVision" />
-    </div>
+    </section>
   );
 }

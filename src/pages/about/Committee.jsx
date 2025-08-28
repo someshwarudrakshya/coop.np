@@ -23,48 +23,45 @@ export default function Committee() {
   ];
 
   return (
-    <div className="container">
-      <section className="section">
-        <div className="section-title">
-          <h2>
-            Our<span className="highlight"> Committee</span>
-          </h2>
-          <p className="section-subtitle">
-            Dedicated professionals guiding our organization
-          </p>
-        </div>
+    <section className="container">
+      <div className="section-title">
+        <h2>
+          Our<span className="highlight"> Committee</span>
+        </h2>
+        <p className="section-subtitle">
+          Dedicated professionals guiding our organization
+        </p>
+      </div>
 
-        {/* Chairman Card */}
-        <div className="chairman-card">
-          <div className="member-image-container large">
-            <img
-              src={chairman.img}
-              alt={`${chairman.name} — ${chairman.role}`}
-              loading="lazy"
-            />
-          </div>
-          <div className="member-info">
-            <h3 className="member-name">{chairman.name}</h3>
-            <p className="member-role">{chairman.role}</p>
-          </div>
+      {/* Chairman Card */}
+      <div className="chairman-card">
+        <div className="member-image-container large">
+          <img
+            src={chairman.img}
+            alt={`${chairman.name} — ${chairman.role}`}
+            loading="lazy"
+          />
         </div>
+        <div className="member-info">
+          <h3 className="member-name">{chairman.name}</h3>
+          <p className="member-role">{chairman.role}</p>
+        </div>
+      </div>
 
-        {/* Other Members */}
-        <div className="members-grid">
-          {members.map((m) => (
-            <div key={m.name} className="member-card small-card">
-              <div className="member-image-container">
-                <img src={m.img} alt={`${m.name} — ${m.role}`} loading="lazy" />
-              </div>
-              <div className="member-info">
-                <h3 className="member-name">{m.name}</h3>
-                <p className="member-role">{m.role}</p>
-              </div>
+      {/* Other Members */}
+      <div className="members-grid">
+        {members.map((m) => (
+          <div key={m.name} className="member-card small-card">
+            <div className="member-image-container">
+              <img src={m.img} alt={`${m.name} — ${m.role}`} loading="lazy" />
             </div>
-          ))}
-        </div>
-      </section>
-
-    </div>
+            <div className="member-info">
+              <h3 className="member-name">{m.name}</h3>
+              <p className="member-role">{m.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

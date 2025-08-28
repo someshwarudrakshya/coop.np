@@ -18,37 +18,37 @@ const Carousel = () => {
     {
       id: 1,
       image: Carousel1,
-      title: "Organic Rudraksha Farming",
-      description: "Sustainable cultivation practices in the Himalayan region",
+      title: "",
+      description: "",
     },
     {
       id: 2,
       image: Carousel2,
-      title: "Farmer Cooperative",
-      description:
-        "Supporting over 500 local farmers with fair trade practices",
-        lazy: true
+      title: "",
+      description: "",
+      lazy: true,
     },
     {
       id: 3,
       image: Carousel3,
-      title: "Premium Quality Products",
-      description: "Certified organic Rudraksha beads and spiritual products",
-      lazy: true
+      title: "",
+      description: "",
+      lazy: true,
     },
     {
-        id: 4,
-        image: Carousel4,
-        title: "Premium Quality Products",
-        description: "Certified organic Rudraksha beads and spiritual products",
-        lazy: true
-      },
+      id: 4,
+      image: Carousel4,
+      title: "",
+      description: "",
+      lazy: true,
+    },
     {
       id: 5,
       image: Carousel5,
       title: "Community Engagement",
-      description: "Empowering local communities through education and resources",
-      lazy: true
+      description:
+        "Empowering local communities through education and resources",
+      lazy: true,
     },
   ];
 
