@@ -1,12 +1,11 @@
-import Dil from "../../assets/committee/Dil.jpg";
-import Naresh from "../../assets/committee/Naresh.jpg";
-import Sankar from "../../assets/committee/Sankar.jpg";
-import Bipana from "../../assets/committee/Bipana.jpg";
-import Uma from "../../assets/committee/Uma.jpg";
-import Phurbi from "../../assets/committee/Phurbi.jpg";
+import Dil from "../../assets/committee/Dil.avif";
+import Naresh from "../../assets/committee/Naresh.avif";
+import Sankar from "../../assets/committee/Sankar.avif";
+import Bipana from "../../assets/committee/Bipana.avif";
+import Uma from "../../assets/committee/Uma.avif";
+import Phurbi from "../../assets/committee/Phurbi.avif";
 import Bhola from "../../assets/committee/Bhola.avif";
-import noFace from "../../assets/noFace.jpg";
-
+import noFace from "../../assets/noFace.avif";
 import "./css/Committee.css";
 
 export default function Committee() {
@@ -24,53 +23,48 @@ export default function Committee() {
   ];
 
   return (
-    <div className="fluid-background">
-      <div className="container">
-        <section className="section">
-          <div className="section-title">
-            <h2>
-              Our<span className="highlight"> Committee</span>
-            </h2>
-            <p className="section-subtitle">
-              Dedicated professionals guiding our organization
-            </p>
-          </div>
+    <div className="container">
+      <section className="section">
+        <div className="section-title">
+          <h2>
+            Our<span className="highlight"> Committee</span>
+          </h2>
+          <p className="section-subtitle">
+            Dedicated professionals guiding our organization
+          </p>
+        </div>
 
-          {/* Chairman Card */}
-          <div className="chairman-card">
-            <div className="member-image-container large">
-              <img
-                src={chairman.img}
-                alt={`${chairman.name} — ${chairman.role}`}
-                loading="lazy"
-              />
-            </div>
-            <div className="member-info">
-              <h3 className="member-name">{chairman.name}</h3>
-              <p className="member-role">{chairman.role}</p>
-            </div>
+        {/* Chairman Card */}
+        <div className="chairman-card">
+          <div className="member-image-container large">
+            <img
+              src={chairman.img}
+              alt={`${chairman.name} — ${chairman.role}`}
+              loading="lazy"
+            />
           </div>
+          <div className="member-info">
+            <h3 className="member-name">{chairman.name}</h3>
+            <p className="member-role">{chairman.role}</p>
+          </div>
+        </div>
 
-          {/* Other Members */}
-          <div className="members-grid">
-            {members.map((m) => (
-              <div key={m.name} className="member-card small-card">
-                <div className="member-image-container">
-                  <img
-                    src={m.img}
-                    alt={`${m.name} — ${m.role}`}
-                    loading="lazy"
-                  />
-                </div>
-                <div className="member-info">
-                  <h3 className="member-name">{m.name}</h3>
-                  <p className="member-role">{m.role}</p>
-                </div>
+        {/* Other Members */}
+        <div className="members-grid">
+          {members.map((m) => (
+            <div key={m.name} className="member-card small-card">
+              <div className="member-image-container">
+                <img src={m.img} alt={`${m.name} — ${m.role}`} loading="lazy" />
               </div>
-            ))}
-          </div>
-        </section>
-      </div>
+              <div className="member-info">
+                <h3 className="member-name">{m.name}</h3>
+                <p className="member-role">{m.role}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
     </div>
   );
 }

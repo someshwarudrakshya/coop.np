@@ -1,69 +1,64 @@
 import { FaShieldAlt, FaBriefcase, FaLandmark } from "react-icons/fa";
+import Note from "../../components/Note.jsx";
 import "./css/Loan.css";
 
 export default function Loan() {
   return (
-    <div className="loan-page container">
+    <div className="container">
       {/* Hero Section */}
-        <div className="loan-hero-content ">
-          <div className="section-title">
-          <h2 className="loan-title">
-            Loan Facilities <span className="highlight">for Members</span>
-          </h2>
-          <p className="loan-subtitle">
-            Reliable and secure financial support to meet your personal and business needs.
-          </p>
+      <section className="loan-hero">
+        <div className="section-title"> 
+        <h2>
+          Loan Facilities <span className="highlight">for Members</span>
+        </h2>
+        <p >
+          Reliable and secure financial support to meet your personal and business needs.
+        </p>
+         </div>
+      </section>
+
+      {/* Loan Cards */}
+      <section className="loan-cards">
+        <div className="loan-card">
+          <div className="icon-wrapper">
+            <FaShieldAlt className="loan-icon" />
           </div>
-        </div>
-
-        {/* Safe Loan */}
-        <div className="loan-card">
-          <FaShieldAlt className="loan-icon" />
-          <h2>Safe Loan (सी. लोन)</h2>
+          <h3>Secured Loan (सी. लोन)</h3>
           <p>
-            Safe Loan is provided securely based on the amount deposited in members’ savings accounts.
+            Secured Loan is provided securely based on the amount deposited in members’ savings accounts.
             Depending on savings and repayment capacity, 50% to 90% of the deposited amount can be lent
-            through a simple process. It offers lower interest rates than standard loans and is designed
-            to support members in emergencies or short-term investment needs. Terms and conditions apply.
+            through a simple process. It offers lower interest rates and supports members in emergencies
+            or short-term investment needs.
           </p>
         </div>
 
-        {/* Business Loan */}
         <div className="loan-card">
-          <FaBriefcase className="loan-icon" />
-          <h2>Business Loan (व्यावसायिक ऋण)</h2>
+          <div className="icon-wrapper">
+            <FaBriefcase className="loan-icon" />
+          </div>
+          <h3>Business Loan (व्यावसायिक ऋण)</h3>
           <p>
-            Business Loan is provided based on the member’s saved amount using a loan multiplier (typically
-            2–3 times the savings) with the savings as collateral. The maximum term is one year with a limit
-            (e.g., up to NPR 200,000). This facility is suitable for small to medium businesses to cover
-            capital needs, purchase materials, or expand operations. Standard interest rates and institutional
-            policies apply.
+            Business Loan is provided based on the member’s savings with a multiplier (2–3x) as collateral. 
+            The maximum term is one year (up to NPR 200,000). Suitable for small businesses to cover capital, 
+            purchase materials, or expand operations.
           </p>
         </div>
 
-        {/* Collateral Loan */}
         <div className="loan-card">
-          <FaLandmark className="loan-icon" />
-          <h2>Collateral Loan (धितो ऋण)</h2>
+          <div className="icon-wrapper">
+            <FaLandmark className="loan-icon" />
+          </div>
+          <h3>Collateral Loan (धितो ऋण)</h3>
           <p>
-            Collateral Loan is a long-term loan provided by pledging property such as land or other fixed assets.
-            Suitable for major financial requirements such as business establishment, home construction, or
-            capital investment. Property evaluation is conducted by a certified third party, and loan limits
-            are set according to institutional policies. Competitive interest rates and transparent terms apply.
+            Collateral Loan is a long-term loan provided by pledging property such as land or assets.
+            Suitable for business establishment, home construction, or capital investment. Property is
+            evaluated by a certified third party with competitive rates and transparent terms.
           </p>
         </div>
+      </section>
 
-        {/* Note */}
-        <div className="loan-note">
-          <p>
-            We prioritize our members’ financial goals and needs, providing reliable and fair loan facilities
-            to strengthen the community. <br />
-            <strong>Note:</strong> For detailed terms, conditions, and required documents, please contact your
-            nearest branch.
-          </p>
-        </div>
-
-
+      {/* Note Section */}
+      <Note type="Loan" />
     </div>
   );
 }

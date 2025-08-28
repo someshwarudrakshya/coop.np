@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useSwipeable } from "react-swipeable";
+import Carousel1 from "../assets/carousel/Carousel1.avif";
+import Carousel2 from "../assets/carousel/Carousel2.avif";
+import Carousel3 from "../assets/carousel/Carousel3.avif";
+import Carousel4 from "../assets/carousel/Carousel4.avif";
+import Carousel5 from "../assets/carousel/Carousel5.avif";
+
 import "./css/Carousel.css";
 
 const Carousel = () => {
@@ -11,21 +17,38 @@ const Carousel = () => {
   const slides = [
     {
       id: 1,
-      image: "/src/assets/carousel/s1.avif",
+      image: Carousel1,
       title: "Organic Rudraksha Farming",
       description: "Sustainable cultivation practices in the Himalayan region",
     },
     {
       id: 2,
-      image: "/src/assets/carousel/s2.jpg",
+      image: Carousel2,
       title: "Farmer Cooperative",
-      description: "Supporting over 500 local farmers with fair trade practices",
+      description:
+        "Supporting over 500 local farmers with fair trade practices",
+        lazy: true
     },
     {
       id: 3,
-      image: "/src/assets/carousel/s3.jpg",
+      image: Carousel3,
       title: "Premium Quality Products",
       description: "Certified organic Rudraksha beads and spiritual products",
+      lazy: true
+    },
+    {
+        id: 4,
+        image: Carousel4,
+        title: "Premium Quality Products",
+        description: "Certified organic Rudraksha beads and spiritual products",
+        lazy: true
+      },
+    {
+      id: 5,
+      image: Carousel5,
+      title: "Community Engagement",
+      description: "Empowering local communities through education and resources",
+      lazy: true
     },
   ];
 

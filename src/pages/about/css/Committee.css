@@ -37,12 +37,13 @@
 
 .member-card.small-card {
   padding: 1.2rem;
+  border: 2px solid rgba(126, 154, 253, 0.4);
 }
 
 .member-card:hover,
 .chairman-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   border-color: rgba(126, 154, 253, 0.3);
 }
 

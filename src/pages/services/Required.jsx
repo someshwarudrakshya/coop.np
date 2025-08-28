@@ -1,4 +1,4 @@
-import React from "react";
+import Note from "../../components/Note.jsx";
 import "./css/Required.css";
 
 export default function RequiredDocs() {
@@ -16,7 +16,7 @@ export default function RequiredDocs() {
       {/* Membership Section */}
       <section className="docs-section">
         <h2 className="required-title">To Become a Member</h2>
-        <p  className="required-subtitle">Documents needed to register as a cooperative member in Nepal:</p>
+        <p className="required-subtitle">Docs needed to register as a cooperative member in Nepal:</p>
         <ul className="docs-list">
           <li>Copy of Nepali Citizenship Certificate</li>
           <li>Two recent passport-sized photographs</li>
@@ -31,14 +31,14 @@ export default function RequiredDocs() {
       {/* Loan Section */}
       <section className="docs-section">
         <h2 className="required-title">To Apply for a Loan</h2>
-        <p className="required-subtitle">Documents required to apply for a loan from the cooperative:</p>
+        <p className="required-subtitle">Docs required to apply for a loan from the cooperative:</p>
         <ul className="docs-list">
           <li>Copy of Nepali Citizenship Certificate</li>
           <li>Two recent passport-sized photographs</li>
           <li>Completed loan application form</li>
           <li>Income proof (Salary slip or tax clearance certificate)</li>
           <li>
-            Collateral documents (Land ownership certificate, Blueprint,
+            Collateral docs (Land ownership certificate, Blueprint,
             Charkilla, etc.)
           </li>
           <li>Latest tax clearance receipt or land revenue receipt (Malpot)</li>
@@ -48,6 +48,9 @@ export default function RequiredDocs() {
           <li>PAN card for loans above NPR 50 lakh</li>
         </ul>
       </section>
+      
+   {/* Note Section */}
+      <Note type="RequiredDocuments" />
     </div>
   );
 }

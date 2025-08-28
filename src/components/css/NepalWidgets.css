@@ -6,7 +6,8 @@
 /* Two-column layout */
 .widgets-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Calendar bigger */
+  grid-template-columns: 2fr 1fr;
+  /* Calendar bigger */
   gap: 20px;
   align-items: start;
 }
@@ -30,7 +31,7 @@
   background: #fff;
   border-radius: 10px;
   padding: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .widget-iframe {
@@ -71,8 +72,10 @@
 .calendar-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 105%; /* aspect ratio for responsiveness */
+  padding-top: 105%;
+  margin: 10px;
   overflow: hidden;
+  border: 2px solid rgba(126, 154, 253, 0.4);
 }
 
 .calendar-iframe {

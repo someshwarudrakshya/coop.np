@@ -43,18 +43,18 @@
 }
 
 .timeline-item .content {
-  background: #fff;
+  background: var(--background);
   padding: 1.5rem;
   border-radius: 12px;
   position: relative;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(0);
   transition: all 0.3s ease;
+  border: 2px solid rgba(126, 154, 253, 0.4);
 }
 
 /* Extra glow on hover */
 .timeline-item .content:hover {
-  box-shadow: 0 8px 25px rgba(0, 128, 255, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .timeline-item.left .content {

@@ -1,4 +1,5 @@
 import { FaBullseye, FaEye, FaHandshake } from "react-icons/fa";
+import Note from "../../components/Note.jsx";
 import "./css/Mission.css";
 import "../../global.css";
 
@@ -67,6 +68,9 @@ export default function MissionVision() {
           </p>
         </div>
       </div>
+
+         {/* Note Section */}
+      <Note type="MissionVision" />
     </div>
   );
 }

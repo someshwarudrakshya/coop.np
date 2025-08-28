@@ -1,7 +1,7 @@
 .message-page {
   display: flex;
   gap: 3rem;
-  padding: 3rem 0;
+  padding: 0;
 }
 
 /* Hero Section */
@@ -11,6 +11,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(126, 154, 253, 0.4);
 }
 
 .message-hero img {

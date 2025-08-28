@@ -1,0 +1,9 @@
+.loan-note {
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius-md);
+  background: #fffde7;
+  border-bottom: 5px solid var(--secondary-color);
+  text-align: center;
+  font-weight: 600;
+}

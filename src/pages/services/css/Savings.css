@@ -9,10 +9,10 @@
 }
 
 .tabs button {
-  background: var(--background);
+  background: var(--btn-color);
   border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  padding: var(--space-2) var(--space-6);
+  color: var(--light-color);
+  padding: var(--space-1) var(--space-4);
   border-radius: var(--radius-lg);
   font-weight: 600;
   cursor: pointer;
@@ -40,11 +40,12 @@
 
 /* Individual Card */
 .saving-card {
-  background: #fff;
+  background: var(--background);
   padding: var(--space-6);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(126, 154, 253, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +54,7 @@
 
 .saving-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 /* Icon */

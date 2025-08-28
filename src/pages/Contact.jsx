@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Note from "../components/Note.jsx";
 import "./css/Contact.css";
 
 // Import Font Awesome
@@ -174,6 +175,8 @@ export default function Contact() {
           ></iframe>
         </div>
       </div>
+
+            <Note type="Contact" />
     </div>
   );
 }

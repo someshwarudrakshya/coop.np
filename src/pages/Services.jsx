@@ -1,4 +1,4 @@
-import React from "react";
+import Note from "../components/Note.jsx";
 import {
   FaPiggyBank,
   FaHandHoldingUsd,
@@ -66,6 +66,8 @@ export default function Services() {
           </div>
         </section>
       ))}
+
+        <Note type="Services" />
     </div>
   );
 }

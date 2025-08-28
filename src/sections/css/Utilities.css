@@ -12,11 +12,12 @@
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid rgba(126, 154, 253, 0.4);
 }
 
 .utility-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .notice-card {

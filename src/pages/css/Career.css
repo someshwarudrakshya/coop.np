@@ -11,11 +11,8 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 15px;
-}
-
-.job-icon {
-  font-size: 2rem;
-  color: var(--secondary-color, #d24e01);
+  font-size: 1.8rem;
+  color: var(--secondary-color);
 }
 
 .job-info p {
@@ -50,10 +47,16 @@ ul {
 .apply-box {
   margin-top: 30px;
   padding: 20px;
-  background: #f9f9f9;
-  border-left: 5px solid var(--secondary-color, #d24e01);
+  background: var(--hf-bg);
+  border-bottom: 5px solid var(--secondary-color);
   border-radius: 8px;
   text-align: center;
+}
+
+.apply-box p {
+  margin: 0;
+  font-size: var(--space-5);
+  color: var(--light-color);
 }
 
 .apply-btn {
@@ -69,7 +72,7 @@ ul {
 }
 
 .apply-btn:hover {
-  background: #b23f00;
+  background: var(--hover-color);
 }
 
 /* Responsive */

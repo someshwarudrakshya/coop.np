@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import chairman from "/src/assets/chairman.avif";
-import "./css/ChairmanStory.css";
+import "./css/ChairmanShortMessage.css";
 
-export default function ChairmanStory() {
+export default function ChairmanShortMessage() {
   return (
     <div className="fluid-background">
       <div className="container">
@@ -28,15 +28,15 @@ export default function ChairmanStory() {
               member-focused services.
             </p>
 
-            {/* Better Read More button */}
-            <NavLink to="/About/MessageFrom" className="read-more-btn">
-              Read More <span className="arrow">→</span>
-            </NavLink>
-
-            <p className="signature">
-              – Chairman
-              <br /> Mr.<span className="highlight"> Bhola Shah</span>
-            </p>
+            <div className="sign-section">
+              <NavLink to="/About/MessageFrom" className="read-more-btn">
+                Read More <span className="arrow">→</span>
+              </NavLink>
+              <p className="signature">
+                – Chairman
+                <br /> Mr.<span className="highlight"> Bhola Shah</span>
+              </p>
+            </div>
           </div>
         </section>
       </div>

@@ -1,5 +1,4 @@
 /* ===== Hero Section ===== */
-
 .history-title {
   font-size: var(--step-4);
   font-weight: 700;
@@ -29,14 +28,13 @@
   background: #fff;
   padding: var(--space-6);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(126, 154, 253, 0.4);
+ 
 }
 
 .history-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .history-icon {

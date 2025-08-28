@@ -63,7 +63,7 @@ export default function Navbar() {
       subItems: [
         { path: "/About/Mission", label: "Mission & Vision" },
         { path: "/About/Team", label: "Our Team" },
-        { path: "/About/MessageFrom", label: "Message from CEO" },
+        { path: "/About/MessageFrom", label: "Message from Chairman" },
       ],
     },
     {

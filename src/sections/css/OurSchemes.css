@@ -20,16 +20,16 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: large;
+  font-size: larger;
   font-weight: 600;
-  color: #4a5568;
   transition: all 0.3s ease;
-  border-bottom: 3px solid #74859e;
+   border-bottom: 5px solid transparent;
+     color: var(--dark-color);
 }
 
 .tab-button:hover {
-  color: var(--light-color);
-  background: var(--accent-color);
+
+   border-bottom: 5px solid var(--secondary-color);
   border-radius: 5px;
 }
 

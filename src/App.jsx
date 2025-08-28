@@ -56,7 +56,7 @@ export default function App() {
         <Route path="/NepalWidgets" element={<NepalWidget />} />
         <Route path="/EmiCalculator" element={<EmiCalculator />} />
       </Routes>
-      <div className="section-divider mx-auto"></div>
+      <div className="section-divider"></div>
       <Footer />
     </Router>
   );

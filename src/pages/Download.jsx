@@ -1,4 +1,5 @@
 import { FaFilePdf, FaFileAlt, FaFileWord, FaDownload } from "react-icons/fa";
+import Note from "../components/Note.jsx";
 import "./css/Download.css";
 
 const files = [
@@ -103,6 +104,8 @@ export default function Download() {
           </div>
         ))}
       </div>
+
+            <Note type="Download" />
     </div>
   );
 }

@@ -1,6 +1,5 @@
-import React from "react";
+import Note from "../components/Note.jsx";
 import {
-  FaBriefcase,
   FaMapMarkerAlt,
   FaClock,
   FaMoneyBillWave,
@@ -10,7 +9,7 @@ import "./css/Career.css";
 export default function Career() {
   const job = {
     title: "Marketing Staff",
-    location: "Ramdhuni and Itahari, Nepal",
+    location: "Ramdhuni and Itahari Municipality, Koshi Province, Nepal",
     type: "Full-Time",
     salary: "Negotiable",
     description:
@@ -51,8 +50,7 @@ export default function Career() {
       </div>
       <div className="job-card">
         <div className="job-header">
-          <FaBriefcase className="job-icon" />
-          <h2>{job.title}</h2>
+               <h2>{job.title}</h2>
         </div>
         <div className="job-info">
           <p>
@@ -98,6 +96,8 @@ export default function Career() {
           </a>
         </div>
       </div>
+
+      <Note type="Career" />
     </div>
 
     

@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import Dil from "../assets/committee/Dil.jpg";
-import Naresh from "../assets/committee/Naresh.jpg";
-import Sankar from "../assets/committee/Sankar.jpg";
-import Bipana from "../assets/committee/Bipana.jpg";
+import Dil from "../assets/committee/Dil.avif";
+import Naresh from "../assets/committee/Naresh.avif";
+import Sankar from "../assets/committee/Sankar.avif";
+import Bipana from "../assets/committee/Bipana.avif";
 
 import "./css/Committee.css";
 

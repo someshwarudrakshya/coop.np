@@ -37,7 +37,7 @@ export default function Events() {
   ];
 
   return (
-    <section className="container">
+    <section>
       <div className="section-title">
         <h2 className="events-title">Our Yearly <span className="highlight">Highlighted Events</span></h2>
         <p className="events-description">

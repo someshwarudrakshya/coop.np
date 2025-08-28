@@ -6,12 +6,12 @@
 }
 
 .post-card {
-  background-color: var(--card-bg);
-  border-radius: var(--border-radius);
+  background-color: var(--background);
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: var(--box-shadow);
   transition: transform 0.3s ease;
-  border: 0.0625rem solid var(--border-color);
+  border: 2px solid rgba(126, 154, 253, 0.4);
 }
 
 .post-card:hover {
@@ -51,7 +51,7 @@
   color: var(--text-color);
   margin-bottom: clamp(0.625rem, 2vw, 0.9375rem);
   line-height: 1.6;
-  font-size: clamp(13.6px, 2vw, 14.4px);
+  font-size: clamp(var(--space-2));
   text-align: justify;
   transition: transform 0.5s ease;
 }

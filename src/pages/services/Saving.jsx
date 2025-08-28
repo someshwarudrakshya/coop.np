@@ -9,6 +9,7 @@ import {
   FaRegMoneyBillAlt,
 } from "react-icons/fa";
 import "./css/Savings.css";
+import Note from "../../components/Note.jsx";
 
 export default function SavingsOverview() {
   const [activeTab, setActiveTab] = useState("current");
@@ -140,6 +141,9 @@ export default function SavingsOverview() {
         {activeTab === "periodic" && renderAccounts(periodicAccounts)}
         {activeTab === "saving" && renderAccounts(savingAccounts)}
       </div>
+
+      {/* Note Section */}
+      <Note type="Savings" />
     </div>
   );
 }

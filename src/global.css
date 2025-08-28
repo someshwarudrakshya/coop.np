@@ -302,6 +302,16 @@ h6 {
   box-shadow: var(--shadow-md);
 }
 
+.note-section {
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius-md);
+  background: #fffde7;
+  border-left: 5px solid var(--secondary-color);
+  text-align: center;
+  font-weight: 600;
+}
+
 /* Fluid Forms */
 .input {
   width: 100%;

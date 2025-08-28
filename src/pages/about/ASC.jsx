@@ -1,7 +1,7 @@
-import React from "react";
-import Umesh from "../../assets/accounting/Umesh.jpg";
-import Rita from "../../assets/accounting/Rita.jpg";
-import noFace from "../../assets/noFace.jpg";
+import Note from "../../components/Note.jsx";
+import Umesh from "../../assets/accounting/Umesh.avif";
+import Rita from "../../assets/accounting/Rita.avif";
+import noFace from "../../assets/noFace.avif";
 
 import "./css/Committee.css";
 import "./css/ASC.css";
@@ -14,8 +14,7 @@ export default function AccountingSupervisoryCommittee() {
   ];
 
   return (
-    <div className="fluid-background">
-      <div className="container">
+    <div className="container">
         <section className="section">
           <div className="section-title">
             <h2>
@@ -51,7 +50,10 @@ export default function AccountingSupervisoryCommittee() {
             ))}
           </div>
         </section>
+
+           {/* Note Section */}
+    <Note type="AccountingSupervisoryCommittee" />
       </div>
-    </div>
+  
   );
 }

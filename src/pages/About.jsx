@@ -1,4 +1,5 @@
 import { FaHistory, FaStar, FaUsers } from "react-icons/fa";
+import Note from "../components/Note.jsx";
 import "./css/About.css";
 
 export default function History() {
@@ -70,6 +71,8 @@ export default function History() {
           </p>
         </div>
       </div>
+
+      <Note type="About" />
     </div>
   );
 }
