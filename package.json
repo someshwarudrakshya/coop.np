@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
     "publish": "npm run build && npm run deploy",
-    "update": "git add . && git commit -m \"update\" && git push origin main && npm run publish"
+    "update": "git add -A && git commit -m \"Update: changes\" && git push"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",

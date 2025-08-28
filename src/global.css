@@ -18,11 +18,9 @@
   /* Fluid Spacing scale (based on viewport width) */
   --space-fluid-min: 0.25rem;
   --space-fluid-max: 1rem;
-  --space-1: clamp(
-    var(--space-fluid-min),
-    0.5vw + 0.125rem,
-    var(--space-fluid-max)
-  );
+  --space-1: clamp(var(--space-fluid-min),
+      0.5vw + 0.125rem,
+      var(--space-fluid-max));
   --space-2: clamp(0.375rem, 1vw + 0.125rem, 1rem);
   --space-3: clamp(0.5rem, 1.5vw + 0.125rem, 1.25rem);
   --space-4: clamp(0.75rem, 2vw + 0.25rem, 1.5rem);
@@ -38,10 +36,8 @@
   --radius-lg: clamp(0.75rem, 1.5vw, 1.25rem);
 
   /* Fluid Shadows */
-  --shadow-sm: 0 clamp(0.0625rem, 0.125vw, 0.125rem)
-    clamp(0.125rem, 0.25vw, 0.25rem) rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 clamp(0.25rem, 0.5vw, 0.5rem) clamp(0.5rem, 1vw, 1rem)
-    rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 clamp(0.0625rem, 0.125vw, 0.125rem) clamp(0.125rem, 0.25vw, 0.25rem) rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 clamp(0.25rem, 0.5vw, 0.5rem) clamp(0.5rem, 1vw, 1rem) rgba(0, 0, 0, 0.08);
 
   /* Fluid Container max-widths */
   --container-sm: min(95vw, 640px);
@@ -88,6 +84,11 @@ body {
   background: var(--background);
   min-height: 100vh;
   min-height: 100dvh;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 img,
@@ -230,8 +231,7 @@ h6 {
   appearance: none;
   border: 1px solid transparent;
   border-radius: var(--radius-md);
-  padding: clamp(var(--space-1), 2vw, var(--space-1))
-    clamp(var(--space-3), 3vw, var(--space-4));
+  padding: clamp(var(--space-1), 2vw, var(--space-1)) clamp(var(--space-3), 3vw, var(--space-4));
   background: var(--btn-color);
   color: var(--light-color);
   font-weight: 600;
@@ -315,8 +315,7 @@ h6 {
 /* Fluid Forms */
 .input {
   width: 100%;
-  padding: clamp(var(--space-2), 2vw, var(--space-3))
-    clamp(var(--space-3), 3vw, var(--space-4));
+  padding: clamp(var(--space-2), 2vw, var(--space-3)) clamp(var(--space-3), 3vw, var(--space-4));
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface);
@@ -427,14 +426,10 @@ h6 {
 /* Safe area insets for modern devices */
 @supports (padding: max(0px)) {
   .container {
-    padding-inline: max(
-      clamp(var(--space-3), 4vw, var(--space-6)),
-      env(safe-area-inset-left)
-    );
-    padding-inline: max(
-      clamp(var(--space-3), 4vw, var(--space-6)),
-      env(safe-area-inset-right)
-    );
+    padding-inline: max(clamp(var(--space-3), 4vw, var(--space-6)),
+        env(safe-area-inset-left));
+    padding-inline: max(clamp(var(--space-3), 4vw, var(--space-6)),
+        env(safe-area-inset-right));
   }
 
   body {
