@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://someshwarudrakshya.coop.np",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build && cp dist/index.html dist/404.html",

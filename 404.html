@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Not Found</title>
-    <script type="text/javascript">
-        // Redirect to index.html for client-side routing
-        (function () {
-            var path = window.location.pathname + window.location.search + window.location.hash;
-            var base = "/"; // Root path, change if your app is hosted in a subfolder
-            
-            // Make sure to redirect to the index.html page preserving the full path
-            window.location.replace(base + "index.html" + path);
-        })();
-    </script>
-</head>
-<body>
-    <h1>Redirecting...</h1>
-</body>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>If you are not redirected, <a href="/">click here</a>.</p>
+  </body>
 </html>
