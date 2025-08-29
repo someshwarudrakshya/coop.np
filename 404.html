@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Not Found</title>
     <script type="text/javascript">
-        // Redirect unknown routes to index.html
+        // Redirect to index.html for client-side routing
         (function () {
-            var path = window.location.pathname;
-            var base = "/"; // change this if your site is in a subfolder
-            window.location.href = base + "#" + path;
+            var path = window.location.pathname + window.location.search + window.location.hash;
+            var base = "/"; // Root path, change if your app is hosted in a subfolder
+            
+            // Make sure to redirect to the index.html page preserving the full path
+            window.location.replace(base + "index.html" + path);
         })();
     </script>
 </head>
-
 <body>
     <h1>Redirecting...</h1>
 </body>
-
 </html>
