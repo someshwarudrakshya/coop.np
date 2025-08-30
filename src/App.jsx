@@ -29,35 +29,34 @@ import Required from "./pages/services/Required";
 
 export default function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Navbar />
       <PageScroll />
       <Sidebar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* about subpages */}
-        <Route path="./pages/About" element={<About />} />
-        <Route path="./pages/About/Mission" element={<Mission />} />
-        <Route path="./pages/About/Team" element={<Team />} />
-        <Route path="./pages/About/MessageFrom" element={<MessageFrom />} />
-        {/* services subpages */}
-        <Route path="/pages/Services" element={<Services />} />
-        <Route path="/pages/Services/Saving" element={<Saving />} />
-        <Route path="/pages/Services/Loan" element={<Loan />} />
-        <Route path="/pages/Services/Required" element={<Required />} />
-        {/* pages */}
-        <Route path="/pages/Gallery" element={<Gallery />} />
-        <Route path="/pages/Download" element={<Download />} />
-        <Route path="/pages/Contact" element={<Contact />} />
-        <Route path="/#/News&events" element={<NewsEvents />} />
-        <Route path="/#/Career" element={<Career />} />
-        {/* tools */}
-        <Route path="/NepalWidgets" element={<NepalWidget />} />
-        <Route path="/EmiCalculator" element={<EmiCalculator />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/about/mission" element={<Mission />} />
+        <Route path="/about/team" element={<Team />} />
+        <Route path="/about/messagefrom" element={<MessageFrom />} />
+
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/saving" element={<Saving />} />
+        <Route path="/services/loan" element={<Loan />} />
+        <Route path="/services/required" element={<Required />} />
+
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/download" element={<Download />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/news-events" element={<NewsEvents />} />
+        <Route path="/career" element={<Career />} />
+
+        <Route path="/nepalwidgets" element={<NepalWidget />} />
+        <Route path="/emicalculator" element={<EmiCalculator />} />
       </Routes>
       <div className="section-divider"></div>
       <Footer />
-    </Router>
+    </>
   );
 }
