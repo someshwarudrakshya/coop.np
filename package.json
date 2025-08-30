@@ -8,8 +8,9 @@
     "dev": "vite",
     "build": "vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist",
     "version": "node version.js",
-    "update": "npm run version && git add -A && git commit -m \"Update: changes\" && git push"
+      "update": "git add -A && git commit -m 'Update: changes' && git push && npm run deploy"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",
