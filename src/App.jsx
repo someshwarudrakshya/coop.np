@@ -37,21 +37,21 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* about subpages */}
-        <Route path="/About" element={<About />} />
-        <Route path="/About/Mission" element={<Mission />} />
-        <Route path="/About/Team" element={<Team />} />
-        <Route path="/About/MessageFrom" element={<MessageFrom />} />
+        <Route path="./pages/About" element={<About />} />
+        <Route path="./pages/About/Mission" element={<Mission />} />
+        <Route path="./pages/About/Team" element={<Team />} />
+        <Route path="./pages/About/MessageFrom" element={<MessageFrom />} />
         {/* services subpages */}
-        <Route path="/Services" element={<Services />} />
-        <Route path="/Services/Saving" element={<Saving />} />
-        <Route path="/Services/Loan" element={<Loan />} />
-        <Route path="/Services/Required" element={<Required />} />
+        <Route path="/pages/Services" element={<Services />} />
+        <Route path="/pages/Services/Saving" element={<Saving />} />
+        <Route path="/pages/Services/Loan" element={<Loan />} />
+        <Route path="/pages/Services/Required" element={<Required />} />
         {/* pages */}
-        <Route path="/Gallery" element={<Gallery />} />
-        <Route path="/Download" element={<Download />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/News&events" element={<NewsEvents />} />
-        <Route path="/Career" element={<Career />} />
+        <Route path="/pages/Gallery" element={<Gallery />} />
+        <Route path="/pages/Download" element={<Download />} />
+        <Route path="/pages/Contact" element={<Contact />} />
+        <Route path="/#/News&events" element={<NewsEvents />} />
+        <Route path="/#/Career" element={<Career />} />
         {/* tools */}
         <Route path="/NepalWidgets" element={<NepalWidget />} />
         <Route path="/EmiCalculator" element={<EmiCalculator />} />
