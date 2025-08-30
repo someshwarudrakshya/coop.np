@@ -3,11 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # 👈 change if your default branch is "master"
+      - main      # Default branch
+      - develop   # Add any other branch you want to deploy automatically
   workflow_dispatch:
 
 permissions:
-  contents: write # needed for GitHub Pages deployment
+  contents: write
 
 jobs:
   build:
@@ -32,4 +33,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist       # Make sure your build outputs here
+          clean: true

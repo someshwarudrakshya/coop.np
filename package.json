@@ -1,17 +1,15 @@
 {
   "name": "coop.np",
-  "version": "1.0.0",
+  "version": "1756568717085",
   "private": true,
   "type": "module",
   "homepage": "https://someshwarudrakshya.coop.np",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "publish": "npm run build && npm run deploy",
-    "update": "git add -A && git commit -m \"Update: changes\" && git push"
+    "version": "node version.js",
+    "update": "npm run version && git add -A && git commit -m \"Update: changes\" && git push"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",
