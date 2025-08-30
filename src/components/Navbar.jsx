@@ -58,28 +58,28 @@ export default function Navbar() {
   const navItems = [
     { path: "/", label: "Home" },
     {
-      path: "/About",
+      path: "/about",
       label: "About",
       subItems: [
-        { path: "/About/Mission", label: "Mission & Vision" },
-        { path: "/About/Team", label: "Our Team" },
-        { path: "/About/MessageFrom", label: "Message from Chairman" },
+        { path: "/about/mission", label: "Mission & Vision" },
+        { path: "/about/team", label: "Our Team" },
+        { path: "/about/messagefrom", label: "Message from Chairman" },
       ],
     },
     {
-      path: "/Services",
+      path: "/services",
       label: "Services",
       subItems: [
-        { path: "/Services/Saving", label: "Saving Schemes" },
-        { path: "/Services/Loan", label: "Loan Schemes" },
-        { path: "/Services/Required", label: "Required Documents" },
+        { path: "/services/saving", label: "Saving Schemes" },
+        { path: "/services/loan", label: "Loan Schemes" },
+        { path: "/services/required", label: "Required Documents" },
       ],
     },
-    { path: "/News&Events", label: "News & Events" },
-    { path: "/Gallery", label: "Gallery" },
-    { path: "/Download", label: "Download" },
-    { path: "/Career", label: "Career" },
-    { path: "/Contact", label: "Contact" },
+    { path: "/news-events", label: "News & Events" },
+    { path: "/gallery", label: "Gallery" },
+    { path: "/download", label: "Download" },
+    { path: "/career", label: "Career" },
+    { path: "/contact", label: "Contact" },
   ];
 
   return (
